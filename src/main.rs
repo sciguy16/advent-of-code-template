@@ -11,11 +11,11 @@ impl FromStr for DataType {
     }
 }
 
-fn part_one(_inp: &DataType) -> usize {
+fn part_one(_inp: &DataType) -> u64 {
     0
 }
 
-fn part_two(_inp: &DataType) -> usize {
+fn part_two(_inp: &DataType) -> u64 {
     0
 }
 
