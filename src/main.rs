@@ -40,13 +40,13 @@ mod test {
     fn test_part_1() {
         let inp = TEST_DATA.parse().unwrap();
         let ans = part_one(&inp);
-        assert_eq!(ans, 4);
+        assert_eq!(ans, 0);
     }
 
     #[test]
     fn test_part_2() {
         let inp = TEST_DATA.parse().unwrap();
         let ans = part_two(&inp);
-        assert_eq!(ans, 4);
+        assert_eq!(ans, 0);
     }
 }
