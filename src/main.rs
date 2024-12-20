@@ -34,7 +34,7 @@ fn main() -> Result<()> {
 mod test {
     use super::*;
 
-    const TEST_DATA: &str = r#""#;
+    const TEST_DATA: &str = "";
 
     #[test]
     fn test_part_1() {
