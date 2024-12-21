@@ -1,6 +1,8 @@
 use color_eyre::Result;
 use std::{str::FromStr, time::Instant};
 
+const PUZZLE_INPUT: &str = include_str!("../input.txt");
+
 struct DataType;
 
 impl FromStr for DataType {
@@ -21,8 +23,7 @@ fn part_two(_inp: &DataType) -> u64 {
 
 fn main() -> Result<()> {
     color_eyre::install()?;
-    let input = include_str!("../input.txt");
-    let data = input.parse()?;
+    let data = PUZZLE_INPUT.parse()?;
 
     let start = Instant::now();
     let ans = part_one(&data);
