@@ -1,5 +1,5 @@
 use color_eyre::Result;
-use std::str::FromStr;
+use std::{str::FromStr, time::Instant};
 
 struct DataType;
 
@@ -23,10 +23,17 @@ fn main() -> Result<()> {
     color_eyre::install()?;
     let input = include_str!("../input.txt");
     let data = input.parse()?;
+
+    let start = Instant::now();
     let ans = part_one(&data);
-    println!("part one: {ans}");
+    let elapsed = start.elapsed();
+    println!("part one: {} in {} ms", ans, elapsed.as_secs_f32() * 1000.0);
+
+    let start = Instant::now();
     let ans = part_two(&data);
-    println!("part two: {ans}");
+    let elapsed = start.elapsed();
+    println!("part two: {} in {} ms", ans, elapsed.as_secs_f32() * 1000.0);
+
     Ok(())
 }
 
