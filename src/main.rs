@@ -52,8 +52,22 @@ mod test {
     }
 
     #[test]
+    fn test_part_1_b() {
+        let inp = PUZZLE_INPUT.parse().unwrap();
+        let ans = part_one(&inp);
+        assert_eq!(ans, 0);
+    }
+
+    #[test]
     fn test_part_2() {
         let inp = TEST_DATA.parse().unwrap();
+        let ans = part_two(&inp);
+        assert_eq!(ans, 0);
+    }
+
+    #[test]
+    fn test_part_2_b() {
+        let inp = PUZZLE_INPUT.parse().unwrap();
         let ans = part_two(&inp);
         assert_eq!(ans, 0);
     }
